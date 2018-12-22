@@ -1,0 +1,32 @@
+<div class="container">
+
+	<h2 class="text-primary text-center mt-3"> Update User </h2>
+
+	<div class="card-body border border-primary mt-5 rounded">
+
+		<form [formGroup]="updateForm" >
+			<div class="form-group">
+			<label for="fname">Firstname</label>
+			<input  type="text"  class="form-control" formControlName="firstname" id="fname" #firstname>
+		</div>
+	
+		<div class="form-group">
+			<label for="lname">Lastname</label>
+			<input  type="text" class="form-control" formControlName="lastname" id="lname" #lastname >
+
+			
+		</div>
+
+		<div class="form-group">
+			<label>Email</label>
+			<input type="email" formControlName="email" class="form-control" #email>
+		</div>
+			
+		
+		<button class="btn btn-primary" type="submit" [disabled]="updateForm.invalid" (click)="onUpdate(firstname.value, lastname.value, email.value)" >Update</button>
+
+		</form>
+
+	</div>
+
+</div>

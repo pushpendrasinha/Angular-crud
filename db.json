@@ -1,0 +1,34 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "firstname": "Navodita",
+      "lastname": "Kumari",
+      "email": "navo.lkumari27@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstname": "Ankit",
+      "lastname": "sinha",
+      "email": "hellstarankit@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstname": "Pushpendra",
+      "lastname": "Kumar",
+      "email": "pusp2rocks@gmail.com"
+    },
+    {
+      "firstname": "Niteesh",
+      "lastname": "Kumar",
+      "email": "2coolniteesh@gmail.com",
+      "id": 4
+    },
+    {
+      "firstname": "Mayank",
+      "lastname": "Ambasta",
+      "email": "mayankrko@gmail.com",
+      "id": 5
+    }
+  ]
+}

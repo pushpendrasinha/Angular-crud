@@ -1,0 +1,25 @@
+<div class="col-md-6">
+  <h2> User Details</h2>
+ <button class="btn btn-danger" (click)="gotocreate()" > Add User</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>FirstName</th>
+ <!--     <th>LastName</th>
+      <th>Email</th>  -->
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users" >
+      <td class="hidden">{{user.id}}</td>
+      <td (click)="details(user.id)" class="cursor">{{user.firstname}}</td>
+ <!--     <td> {{user.lastname}} </td>
+      <td> {{user.email}} </td> -->
+      <td><button class="btn btn-danger" (click)="onDelete(user)" > Delete</button>
+        <button class="btn btn-danger" (click)="editUser(user)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
